@@ -2,6 +2,7 @@
 
 * Студент: [Александр Еловских](https://up.htmlacademy.ru/htmlcss-individual/2/user/2029361).
 * Наставник: [Валера Хаслер] (https://htmlacademy.ru/profile/id224163).
+* Сайт: [Мой проект Седона](https://aleksandrev.github.io/2029361-sedona-2/).
 
 ---
 
