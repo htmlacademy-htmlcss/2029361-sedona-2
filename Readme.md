@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Еловских](https://up.htmlacademy.ru/htmlcss-individual/2/user/2029361).
-* Наставник: `Неизвестно`.
+* Наставник: [Валера Хаслер] (https://htmlacademy.ru/profile/id224163).
 
 ---
 
