@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
 
     <header class="main-header">
-      <a class="navigation-logo">
-        <img class="page-header-logo" src="#" alt="логотип Sedona">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="логотип Sedona" aria-current="page">
       </a>
       <nav class="header-navigation">
         <ul class="header-navigation-list">
@@ -29,14 +30,14 @@
 
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
-              <img class="navigation-user-img" src="#" alt="Лупа">
+              <img class="navigation-user-img" src="images/Search.svg" width="19" height="19" alt="Поиск гостинницы">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
 
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
-              <img class="navigation-user-img" src="#" alt="Избранное">
+              <img class="navigation-user-img" src="images/favorites.svg" width="18" height="17" alt="Избранное">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -50,8 +51,11 @@
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">Город Седона</h1>
-      <img class="main-wellcome-to-sedona-img" src="#" alt="Добро пожаловать в Седону">
+      <div class="welcome-image-background">
+        <h1 class="visually-hidden">Город Седона</h1>
+        <img class="main-wellcome-to-sedona-img" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+      </div>
+
 
       <section class="main-advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -61,9 +65,7 @@
           <li class="advantages-item">
             <span class="advantages-item-title">Настоящий городок</span>
             <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li>
-            <img class="advantages-item-img" src="#" alt="вид на отель">
+            <img class="advantages-item-img" src="images/town.jpg" width='800' height='385' alt="вид на отель">
           </li>
           <li class="advantages-item">
             <span class="advantages-item-title">Небольшая площадь</span>
@@ -77,10 +79,8 @@
             <span class="advantages-item-title">Мало туристов</span>
             <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li>
-            <img class="advantages-item-img" src="#" alt="вид на каньон">
-          </li>
           <li class="advantages-item">
+            <img class="advantages-item-img" src="images/devil's-bridge.jpg" width='800' height='385' alt="вид на каньон">
             <span class="advantages-item-title">Там есть мост дьявола</span>
             <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -93,20 +93,17 @@
         <p class="main-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="main-infrastructure-list">
           <li class="main-infrastructure-item">
-            <img class="main-infrastructure-img" src="#" alt="домик">
-
-            <!--Стоит ли разметить span, как заголовок h3?-->
-
+            <img class="main-infrastructure-img" src="images/advantages/advantage-housing.svg" width="76" height="72" alt="домик">
             <span>ЖИЛЬЁ</span>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="main-infrastructure-item">
-            <img class="main-infrastructure-img" src="#" alt="еда">
+            <img class="main-infrastructure-img" src="images/advantages/advantage-food.svg" width="75" height="70" alt="еда">
             <span>ЕДА</span>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="main-infrastructure-item">
-            <img class="main-infrastructure-img" src="#" alt="сувениры">
+            <img class="main-infrastructure-img" src="images/advantages/advantage-surprise.svg" width="65" height="76" alt="сувениры">
             <span>СУВЕНИРЫ</span>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -132,29 +129,29 @@
     </main>
 
     <footer class="main-footer">
-      <ul class="footer-social-media">
-        <li class="footer-social-media-item">
+      <ul class="social-media-list">
+        <li class="social-media-item">
           <span class="visually-hidden">вконтакте</span>
-          <a class="footer-social-media-link" href="#">
-            <img class="footer-social-media-img" src="#" alt="лого vk">
+          <a class="social-media-link" href="#">
+            <img class="social-media-img" src="images/social-links/vk.svg" width="25" height="15" alt="лого vk">
           </a>
         </li>
-        <li class="footer-social-media-item">
+        <li class="social-media-item">
           <span class="visually-hidden">телеграм</span>
-          <a class="footer-social-media-link" href="#">
-            <img class="footer-social-media-img" src="#" alt="лого telegram">
+          <a class="social-media-link" href="#">
+            <img class="social-media-img" src="images/social-links/telegram.svg" width="18" height="16" alt="лого telegram">
           </a>
         </li>
-        <li class="footer-social-media-item">
+        <li class="social-media-item">
           <span class="visually-hidden">youtube</span>
-          <a class="footer-social-media-link" href="#">
-            <img class="footer-social-media-img" src="#" alt="лого youtube">
+          <a class="social-media-link" href="#">
+            <img class="social-media-img" src="images/social-links/youtube.svg" width="23" height="18" alt="лого youtube">
           </a>
         </li>
       </ul>
       <a class="footer-contact-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-contact-link" href="#">
-        <img class="footer-contact-link-img" src="#" alt="лого HTMLAcademy">
+        <img class="footer-contact-link-img" src="images/logo-HTML-Academy.svg" width="115" height="34" alt="лого HTMLAcademy">
       </a>
     </footer>
   </body>
