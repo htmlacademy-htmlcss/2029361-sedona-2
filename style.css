@@ -1,15 +1,15 @@
 .welcome-image-background {
   background-image: url('../images/index-background.jpg');
-  width: 1200px;
-  height: 485px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 .main-newsletter {
   background-image: url('../images/subscribe-background.jpg');
-  width: 1200px;
-  height: 414px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 .inner-filter {
   background-image: url('../images/filter-background.jpg');
-  width: 1200px;
-  height: 412px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
