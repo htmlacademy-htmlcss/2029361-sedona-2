@@ -76,8 +76,8 @@ body {
   font-size: 24;
   line-height: 28px;
 }
-.advantages-item:first-child,
-.advantages-item:last-child {
+.advantages-list:first-child,
+.advantages-list:last-child {
   background-color: #82B3D3;
   color: #ffffff;
 }
@@ -101,8 +101,8 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
-.main-infrastructure-item:nth-child(1),
-.main-infrastructure-item:nth-child(3) {
+.main-infrastructure-list:nth-child(1),
+.main-infrastructure-list:nth-child(3) {
   background-color: #83B3D31F;
 }
 .search-hotel {
