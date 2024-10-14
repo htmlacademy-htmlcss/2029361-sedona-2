@@ -73,11 +73,11 @@ body {
 }
 .advantages-item-title {
   font-weight: 700;
-  font-size: 24;
+  font-size: 24px;
   line-height: 28px;
 }
-.advantages-list:first-child,
-.advantages-list:last-child {
+.advantages-item:first-child,
+.advantages-item:last-child {
   background-color: #82B3D3;
   color: #ffffff;
 }
@@ -130,7 +130,6 @@ body {
 }
 
 
-
 .welcome-image-background {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
@@ -141,8 +140,82 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-.inner-filter {
+.background-image-filter {
   background-image: url("../images/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+.breadcrumbs-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.control {
+  font-size: 18px;
+  line-height: 23px;
+}
+.button-filter {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.catalog-filter-submit {
+  background-color: #82B3D3;
+}
+.catalog-filter-reset {
+  background-color: #ffffff00;
+}
+.catalog-filter {
+  display: flex;
+}
+.hotels-navigationquantity {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+}
+.products-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.products-card-text {
+  font-size: 18px;
+  line-height: 21px;
+}
+.products-card-buttons {
+  font-size: 16px;
+  line-height: 20px;
+}
+.products-card-link-buttons,
+.products-card-favorites {
+  font-weight: 700;
+  color: #ffffff;
+}
+.products-card-link-buttons {
+  text-decoration: none;
+  background-color: #756157;
+}
+.products-card-favorites {
+  background-color: #82B3D3;
 }
