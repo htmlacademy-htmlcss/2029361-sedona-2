@@ -32,6 +32,7 @@ body {
   line-height: 26px;
   color: #000000;
   font-weight: 400;
+  margin: 0;
 }
 
 .button {
@@ -44,10 +45,10 @@ body {
 .main-header {
   background: #ffffff;
   color: #000000;
-  display: flex;
 }
 .header-navigation {
   display: flex;
+  justify-content: space-between;
 }
 
 .main-header a {
@@ -136,9 +137,11 @@ body {
 
 
 .welcome-image-background {
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
+  background-image: url(../images/substrate.svg), url("../images/index-background.jpg");
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  background-color: #82B3D3;
 }
 .main-newsletter {
   background-image: url("../images/subscribe-background.jpg");
@@ -243,7 +246,8 @@ body {
 .main-infrastructure-list,
 .social-media-list {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
+  margin: 0;
 }
 .breadcrumbs {
   display: flex;
