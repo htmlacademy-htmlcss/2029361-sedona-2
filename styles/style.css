@@ -243,6 +243,7 @@ body {
 .main-infrastructure-list,
 .social-media-list {
   list-style-type: none;
+  padding-left: 0;
 }
 .breadcrumbs {
   display: flex;
