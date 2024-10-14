@@ -258,3 +258,8 @@ body {
 .header-navigation-list {
   display: flex;
 }
+
+.pagiation-link-active {
+  color: #000000;
+  background-color: #F2F2F2;
+}
