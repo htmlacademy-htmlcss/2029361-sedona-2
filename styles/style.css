@@ -727,6 +727,11 @@ body {
   margin-bottom: 54px;
 }
 
+.newsletter-form-inner {
+  padding-bottom: 104px;
+  margin-bottom: 0;
+}
+
 .visually-hidden {
   display: none;
 }
