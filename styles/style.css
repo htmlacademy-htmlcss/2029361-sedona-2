@@ -94,13 +94,13 @@ body {
 }
 
 .nav-link-icon-search {
-  background-image: url(/images/Search.svg);
+  background-image: url(../images/Search.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .nav-link-icon-favorites {
-  background-image: url(/images/favorites.svg);
+  background-image: url(../images/favorites.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
