@@ -142,6 +142,74 @@ body {
   border: 0;
 }
 
+.navigation-user-registration:hover,
+.search-hotel-dark:hover,
+.products-card-link-buttons:hover {
+  background-color: #615048;
+  cursor: pointer;
+}
+
+.navigation-user-registration:focus,
+.search-hotel-dark:focus,
+.products-card-link-buttons:focus {
+  outline: none;
+  background-color: #615048;
+}
+
+.navigation-user-registration:focus-visible,
+.search-hotel-dark:focus-visible,
+.products-card-link-buttons:focus-visible {
+  outline: none;
+  background-color: #615048;
+}
+
+.navigation-user-registration:focus:not(:focus-visible),
+.search-hotel-dark:focus:not(:focus-visible),
+.products-card-link-buttons:focus:not(:focus-visible) {
+  background-color: #615048;
+}
+
+.navigation-user-registration:active,
+.search-hotel-dark:active,
+.products-card-link-buttons:active {
+  background-color: #756157;
+  color: #FFFFFF4D;
+}
+
+.newsletter-submit:hover,
+.products-card-favorites:hover,
+.catalog-filter-submit:hover {
+  background-color: #68A2CA;
+  cursor: pointer;
+}
+
+.newsletter-submit:focus,
+.products-card-favorites:focus,
+.catalog-filter-submit:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.newsletter-submit:focus:not(:focus-visible),
+.products-card-favorites:focus:not(:focus-visible),
+.catalog-filter-submit:focus:not(:focus-visible) {
+  background-color: #68A2CA;
+}
+
+.newsletter-submit:focus-visible,
+.products-card-favorites:focus-visible,
+.catalog-filter-submit:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.newsletter-submit:active,
+.products-card-favorites:active,
+.catalog-filter-submit:active {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
+}
+
 .main-wellcome-to-sedona-img {
   margin-top: 51px;
 }
@@ -479,6 +547,26 @@ body {
   color: #ffffff;
 }
 
+.breadcrumbs-item:hover a {
+  color: #FFFFFF99;
+}
+
+.breadcrumbs-item:hover path {
+  fill: #FFFFFF99;
+}
+
+.breadcrumbs-item:focus {
+  outline: none;
+}
+
+.breadcrumbs-item:active a {
+  color: #FFFFFF4D;
+}
+
+.breadcrumbs-item:active path {
+  fill: #FFFFFF4D;
+}
+
 .control {
   font-size: 18px;
   line-height: 23px;
@@ -586,6 +674,29 @@ body {
 
 .products-card-favorites-active {
   background-color: #7DB54F;
+}
+
+.products-card-favorites-active:hover {
+  background-color: #6C9E42;
+}
+
+.products-card-favorites-active:focus {
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.products-card-favorites-active:focus:not(:focus-visible) {
+  background-color: #6C9E42;
+}
+
+.products-card-favorites-active:focus-visible {
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.products-card-favorites-active:active {
+  background-color: #7DB54F;
+  color: #FFFFFF4D;
 }
 
 .products-card-rating {
