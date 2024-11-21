@@ -83,25 +83,28 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control" for="advantages-pool">
-                        <input class="control-input" type="checkbox" name="selected-amenities" id="advantages-pool"
+                        <input class="control-input visually-hidden" type="checkbox" name="selected-amenities" id="advantages-pool"
                         value="Бассейн" checked>
-                        Бассейн
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
 
                     <li class="catalog-filter-item">
                       <label class="control" for="advantages-parking">
-                        <input class="control-input" type="checkbox" name="selected-amenities" id="advantages-parking"
+                        <input class="control-input visually-hidden" type="checkbox" name="selected-amenities" id="advantages-parking"
                         value="Парковка" checked>
-                        Парковка
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
 
                     <li class="catalog-filter-item">
                       <label class="control" for="advantages-WiFi">
-                        <input class="control-input" type="checkbox" name="selected-amenities" id="advantages-WiFi"
+                        <input class="control-input visually-hidden" type="checkbox" name="selected-amenities" id="advantages-WiFi"
                         value="Wi-Fi">
-                        Wi-Fi
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
 
@@ -115,20 +118,23 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" name="type-of-housing" value="hotel" type="radio" checked>
-                        Гостинница
+                        <input class="control-input visually-hidden" name="type-of-housing" value="hotel" type="radio" checked focusable="true">
+                        <span class="control-mark-sercule"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" name="type-of-housing" value="Motel" type="radio">
-                        Мотель
+                        <input class="control-input visually-hidden" name="type-of-housing" value="Motel" type="radio" focusable="true">
+                        <span class="control-mark-sercule"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" name="type-of-housing" value="apartments" type="radio">
-                        Апартаменты
+                        <input class="control-input visually-hidden" name="type-of-housing" value="apartments" type="radio" focusable="true">
+                        <span class="control-mark-sercule"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -137,11 +143,26 @@
                 <fieldset class="catalog-range catalog-filter-group filter-price">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="catalog-inputs-range">
-                    <input class="catalog-range-input price-start" name="min-price" type="number" min="0" max="10000" value="0">
-                    <input class="catalog-range-input price-end" name="max-price" type="number" min="0" max="10000" value="9000">
+                    <label for="price-start" class="range-label range-label-min">
+                      от
+                    </label>
+                      <input class="catalog-range-input price-start" name="min-price" id="price-start" type="number" min="0" max="10000" value="" placeholder="0">
+                    <label for="price-end" class="range-label range-label-max">
+                      до
+                    </label>
+                      <input class="catalog-range-input price-end" name="max-price" id="price-end" type="number" min="0" max="10000" value="" placeholder="9000">
                   </div>
                   <div class="catalog-range-price">
-                    <input class="range-price" type="range" min="0" max="12000" value="9000">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 220px;">
+                        <button type="button" class="toggle-button toggle-min">
+                        </button>
+
+                        <button type="button" class="toggle-button toggle-max">
+                        </button>
+                      </div>
+                    </div>
+
                   </div>
                 </fieldset>
 
@@ -157,12 +178,12 @@
         <div class="catalog-products-container">
           <header class="catalog-header-hotels">
             <span class="hotels-navigationquantity">НАЙДЕНО ГОСТИНИЦ: 38</span>
+
             <select class="select-control" aria-label="Сортировка">
-              <option class="select-control-cheap" value="cheap">Сначала дешёвое</option>
-              <option class="select-control-expensive" value="expensive">Сначала дорогое</option>
+              <option class="select-control-cheap" value="cheap">Сначала дешевые</option>
             </select>
             <div class="catalog-card">
-              <button class="catalog-card-variant">
+              <button class="catalog-card-variant catalog-card-variant-curent">
                 <svg xmlns="http://www.w3.org/2000/svg"  focusable="false" aria-hidden="true"  width="16" height="14" fill="none" viewBox="0 0 16 14">
                   <path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
                 </svg>
@@ -315,6 +336,87 @@
           </svg>
         </a>
       </footer>
+
+      <div class="modal-container">
+        <div class="modal modal-auth">
+          <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
+          <button class="modal-close">
+            <svg class="modal-close-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="black"/>
+              </svg>
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
+
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <ul class="modal-form-list">
+
+              <li class="modal-form-item">
+                <label class="modal-label-arrival" for="arrival-date">
+                  Дата Заезда:
+                </label>
+                <input class="modal-inpit-date modal-arrival-date" type="datetime" id="arrival-date" value="27 апреля 2020">
+                <span class="modal-alert modal-alert-wrong">Мы не можем отправить вас в прошлое.</spa>
+              </li>
+
+              <li class="modal-form-item">
+                <label class="modal-label-departure" for="departure-date">
+                  Дата Выезда:
+                </label>
+                <input class="modal-inpit-date modal-departure-date" type="datetime" id="departure-date" value="1 сентября 2023">
+                <span class="modal-alert">На эти даты есть свободные номера. Пока есть.</span>
+              </li>
+
+              <li class="modal-form-item-mini">
+                <div class="corent-container">
+                  <label class="modal-label-mini modal-counter-people" for="counter-people">
+                    Взрослые:
+                  </label>
+                  <input class="modal-counter modal-inpit-people-counter" id="counter-people" type="number" placeholder="2">
+                  <button type="button" class="sum-curent">
+                    <svg class="svg-sum-min"  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="min-curent">
+                    <svg class="svg-sum-min" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  </button>
+                </div>
+                <div class="corent-container">
+                  <span class="modal-label-mini">
+                    <label class="modal-label-mini modal-counter-children" for="counter-children">
+                      Дети:
+                    </label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                          </svg>
+                      </button>
+                      <span role="tooltip" class="tooltip-text" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <input class="modal-counter modal-inpit-children-counter" id="counter-children" type="number" placeholder="2">
+                  <button type="button" class="sum-curent">
+                    <svg class="svg-sum-min"  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="min-curent">
+                    <svg class="svg-sum-min"  width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </div>
+
+              </li>
+
+            </ul>
+            <button type="submit" class="modal-botton-search">найти</button>
+          </form>
+        </div>
+      </div>
+
     </div>
   </body>
 
