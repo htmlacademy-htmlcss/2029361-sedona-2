@@ -26,15 +26,15 @@
             <label class="modal-label-arrival" for="arrival-date">
               Дата Заезда:
             </label>
-            <input class="modal-inpit-date modal-arrival-date" type="datetime" name="arrival-date" id="arrival-date" value="27 апреля 2020" required>
-            <span class="modal-alert modal-alert-wrong">Мы не можем отправить вас в прошлое.</spa>
+            <input class="modal-inpit-date modal-arrival-date" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" required>
+            <span class="modal-alert modal-alert-wrong">Мы не можем отправить вас в прошлое.</span>
           </li>
 
           <li class="modal-form-item">
             <label class="modal-label-departure" for="departure-date">
               Дата Выезда:
             </label>
-            <input class="modal-inpit-date modal-departure-date" type="datetime" id="departure-date" name="departure-date" value="1 сентября 2023" required>
+            <input class="modal-inpit-date modal-departure-date" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" required>
             <span class="modal-alert">На эти даты есть свободные номера. Пока есть.</span>
           </li>
 
@@ -46,6 +46,7 @@
               <button type="button" class="min-curent">
                 <svg class="svg-sum-min" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
               </button>
               <input class="modal-counter modal-inpit-people-counter" name="number-of-adults" id="counter-people" type="number" placeholder="2" required>
               <button type="button" class="sum-curent">
