@@ -36,7 +36,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   background-color: #ffffff;
   box-shadow:0 0 15px #00000033;
 }
@@ -70,6 +69,7 @@ body {
   justify-content: space-between;
   flex-grow: 1;
   gap: 30px;
+  padding-left: 140px;
 }
 
 .navigation-logo {
@@ -78,7 +78,7 @@ body {
 }
 
 .page-header-logo {
-  position: relative;
+  position: absolute;
 }
 
 .navigation-user-menu {
