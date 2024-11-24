@@ -3,9 +3,10 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
   </head>
 
   <body>
@@ -109,21 +110,18 @@
           <p class="main-text infrastructure-text">Опытный персонал и качественное обслуживание!</p>
           <ul class="main-infrastructure-list">
             <li class="main-infrastructure-item infrastructure-item-color">
-              <img class="main-infrastructure-img" src="images/advantages/advantage-housing.svg" width="76" height="72"
-                alt="домик.">
+              <span class="main-infrastructure-svg infrastructure-svg-house"></span>
               <span class="main-infrastructure-title">ЖИЛЬЁ</span>
               <p class="main-infrastructure-text">Рекомендуем пожить<br> в настоящем мотеле, <br> всё как в кино!</p>
             </li>
             <li class="main-infrastructure-item infrastructure-item-color">
-              <img class="main-infrastructure-img" src="images/advantages/advantage-food.svg" width="75" height="70"
-                alt="Гамбургер.">
+              <span class="main-infrastructure-svg infrastructure-svg-food"></span>
               <span class="main-infrastructure-title">ЕДА</span>
               <p class="main-infrastructure-text">Всегда заказывайте<br>топовый фирменный бургер,<br> вы не
                 разочаруетесь!</p>
             </li>
             <li class="main-infrastructure-item infrastructure-item-color">
-              <img class="main-infrastructure-img infrastructure-img-surprise"
-                src="images/advantages/advantage-surprise.svg" width="65" height="76" alt="Подарочная коробка.">
+              <span class="main-infrastructure-svg infrastructure-svg-surprise"></span>
               <span class="main-infrastructure-title">СУВЕНИРЫ</span>
               <p class="main-infrastructure-text">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
@@ -183,7 +181,7 @@
           </svg>
         </a>
       </footer>
-      <div class="modal-container modal-window-close">
+      <div class="modal-container visually-hidden">
         <div class="modal modal-auth">
           <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
           <button type="button" class="modal-close">
@@ -200,15 +198,15 @@
                 <label class="modal-label-arrival" for="arrival-date">
                   Дата Заезда:
                 </label>
-                <input class="modal-inpit-date modal-arrival-date" type="datetime" name="arrival-date" id="arrival-date" value="27 апреля 2020" required>
-                <span class="modal-alert modal-alert-wrong">Мы не можем отправить вас в прошлое.</spa>
+                <input class="modal-inpit-date modal-arrival-date" type="datetime-local" name="arrival-date" id="arrival-date" value="27 апреля 2020" required>
+                <span class="modal-alert modal-alert-wrong">Мы не можем отправить вас в прошлое.</span>
               </li>
 
               <li class="modal-form-item">
                 <label class="modal-label-departure" for="departure-date">
                   Дата Выезда:
                 </label>
-                <input class="modal-inpit-date modal-departure-date" type="datetime" id="departure-date" name="departure-date" value="1 сентября 2023" required>
+                <input class="modal-inpit-date modal-departure-date" type="datetime-local" id="departure-date" name="departure-date" value="1 сентября 2023" required>
                 <span class="modal-alert">На эти даты есть свободные номера. Пока есть.</span>
               </li>
 
@@ -220,6 +218,7 @@
                   <button type="button" class="min-curent">
                     <svg class="svg-sum-min" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
                   </button>
                   <input class="modal-counter modal-inpit-people-counter" name="number-of-adults" id="counter-people" type="number" placeholder="2" required>
                   <button type="button" class="sum-curent">
