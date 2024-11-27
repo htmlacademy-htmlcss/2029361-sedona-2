@@ -186,6 +186,8 @@ body {
   width: 160px;
   min-height: 36px;
   border: 0;
+  white-space: pre-wrap;
+  padding: 8px 10px;
 }
 
 .navigation-user-registration:hover,
@@ -1116,15 +1118,16 @@ body {
 }
 
 .toggle-button:hover {
-  background-color: #bcbcbc;
+  background-color: #fff;
+  box-shadow: 0 4px 10px 0 #00000040;
 }
 
 .toggle-button:focus {
-  outline: 2px solid #68A2CA;
+  outline: 3px solid #83B3D3;
 }
 
 .toggle-button:active {
-  background-color: #bcbcbc;
+  outline: 2px solid #83B3D3;
 }
 
 .toggle-min {
